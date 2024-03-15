@@ -115,28 +115,54 @@
 
 
 
-      <section id="contact" class="team">
+      based on this css implementation: .team.grid::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1; }
+
+.team.grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1; }
+
+.team.single {
+  color: rgb(0, 0, 0);
+  position: relative; }
+  .team.single img {
+    border-radius: 50%;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.8); }
+  .team.single .name {
+    font-size: 1.5em; }
+
+
+
+<section id="contact" class="team">
   <div class="ui container">
     <div class="title center">Meet the Board!</div>
     <div class="team grid">
-      <!-- Row 1 -->
-      <div>
-        <div class="team single"><img src="img/board/Grace.png"></div>
-        <div class="team single"><img src="img/board/Oliver.jpg"></div>
-        <div class="team single"><img src="img/board/Juny.png"></div>
-      </div>
-      <!-- Row 2 -->
-      <div>
-        <div class="team single"><img src="img/board/Varsshita.png"></div>
-        <div class="team single"><img src="img/board/DK.jpg"></div>
-        <div class="team single"><img src="img/board/Suha.jpg"></div>
-      </div>
-      <!-- Row 3 -->
-      <div>
-        <div class="team single"><img src="img/board/Eyob.jpg"></div>
-        <div class="team single"><img src="img/board/Noelani.jpg"></div>
-        <div class="team single"><img src="img/board/Jei.png"></div>
-      </div>
+      <div class="team single"><img src="img/board/Grace.png"></div>
+      <div class="team single"><img src="img/board/Oliver.jpg"></div>
+      <div class="team single"><img src="img/board/Juny.png"></div>
+    </div>
+    <div class="team grid">
+      <div class="team single"><img src="img/board/Varsshita.jpeg"></div>
+      <div class="team single"><img src="img/board/DK.jpg"></div>
+      <div class="team single"><img src="img/board/Suha.jpg"></div>
+    </div>
+    <div class="team grid">
+      <div class="team single"><img src="img/board/Eyob.jpg"></div>
+      <div class="team single"><img src="img/board/Noelani.jpg"></div>
+      <div class="team single"><img src="img/board/Jei.png"></div>
     </div>
     <div class="ui container">
       <div class="title center">Meet the Development Team!</div>
