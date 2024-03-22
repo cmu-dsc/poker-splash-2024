@@ -1,3 +1,4 @@
+
 body {
   font-family: "Lucida Console", Monospace;
   font-weight: 300;
@@ -92,6 +93,7 @@ footer.contact {
   line-height: 1.5em;
 }
 
+
 .logo {
   max-width: 100vw;
   max-height: 40vh;
@@ -182,12 +184,14 @@ img {
 
 .team.single figcaption {
   font-size: 1.5em;
-  position: relative;
-  bottom: -200px;
-  left: 0;
-  right: 0;
+  position: absolute; /* Use absolute positioning for the captions */
+  bottom: 20px; /* Position the captions at the bottom */
+  left: 50%; /* Align the captions to the center horizontally */
+  transform: translateX(-50%); /* Center the captions horizontally */
+  width: 100%; /* Ensure full width of the container for the captions */
   text-align: center;
 }
+
 
 #schedule {
   background-image: url('schedule.svg');
@@ -224,6 +228,64 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media screen and (max-width: 481px){
+  section,
+  footer {
+    padding: 5vh 0; /* Adjust padding for smaller screens */
+  }
+
+  .title {
+    font-size: 2.5em; /* Decrease font size for smaller screens */
+  }
+
+  .text {
+    font-size: 1.2em; /* Decrease font size for smaller screens */
+  }
+
+  .logo {
+    max-height: 30vh; /* Adjust logo size for smaller screens */
+    margin-bottom: 5vh; /* Adjust margin for smaller screens */
+  }
+
+  .team.grid {
+    grid-template-columns: repeat(1, 1fr); /* Adjust grid layout for smaller screens */
+  }
+
+  .team.single figcaption {
+    font-size: 1.2em; /* Decrease font size for smaller screens */
+    /* bottom: -250px;  */
+    bottom: 40px;
+  }
+
+  #schedule,
+  #sponsors {
+    padding: 50px 0; /* Adjust padding for smaller screens */
+  }
+
+  #maintitle {
+    font-size: 2.5em; /* Decrease font size for smaller screens */
+    letter-spacing: 4px; /* Adjust letter spacing for smaller screens */
+  }
+
+  footer {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+
+  footer .icons a {
+    font-size: 1.1em; /* Decrease font size for smaller screens */
+  }
+
+  footer .copyright {
+    font-size: 0.8em; /* Decrease font size for smaller screens */
+  }
+
+  footer #elevator {
+    font-size: 0.7em; /* Decrease font size for smaller screens */
+  }
+}
+
 
 #maintitle {
   font-size: 3.5em;

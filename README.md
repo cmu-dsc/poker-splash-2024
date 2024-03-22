@@ -1,1 +1,2 @@
-Poker AI @ CMU Splash Page
+Poker AI @CMU Splash Page
+
