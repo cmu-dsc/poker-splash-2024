@@ -192,6 +192,9 @@ img {
   text-align: center;
 }
 
+.invisible-image {
+  display: none;
+}
 
 #schedule {
   background-image: url('schedule.svg');
