@@ -128,7 +128,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   text-align: center;
   padding-bottom: 40px;
   margin: 0 auto;
@@ -184,11 +184,21 @@ img {
 
 .team.single figcaption {
   font-size: 1.5em;
-  position: absolute; /* Use absolute positioning for the captions */
-  bottom: 20px; /* Position the captions at the bottom */
-  left: 50%; /* Align the captions to the center horizontally */
-  transform: translateX(-50%); /* Center the captions horizontally */
-  width: 100%; /* Ensure full width of the container for the captions */
+  position: absolute; 
+  bottom: 30px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%; 
+  text-align: center;
+}
+
+.team.single subcaption {
+  font-size: 1.3em;
+  position: absolute; 
+  bottom: 5px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%; 
   text-align: center;
 }
 
@@ -235,57 +245,57 @@ img {
 @media screen and (max-width: 481px){
   section,
   footer {
-    padding: 5vh 0; /* Adjust padding for smaller screens */
+    padding: 5vh 0; 
   }
 
   .title {
-    font-size: 2.5em; /* Decrease font size for smaller screens */
+    font-size: 2.5em; 
   }
 
   .text {
-    font-size: 1.2em; /* Decrease font size for smaller screens */
+    font-size: 1.2em; 
   }
 
   .logo {
-    max-height: 30vh; /* Adjust logo size for smaller screens */
-    margin-bottom: 5vh; /* Adjust margin for smaller screens */
+    max-height: 30vh; 
+    margin-bottom: 5vh; 
   }
 
   .team.grid {
-    grid-template-columns: repeat(1, 1fr); /* Adjust grid layout for smaller screens */
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .team.single figcaption {
+  /* .team.single figcaption {
     font-size: 1.2em; /* Decrease font size for smaller screens */
     /* bottom: -250px;  */
-    bottom: 40px;
-  }
+    /* bottom: 40px;
+  } */ 
 
   #schedule,
   #sponsors {
-    padding: 50px 0; /* Adjust padding for smaller screens */
+    padding: 50px 0; 
   }
 
   #maintitle {
-    font-size: 2.5em; /* Decrease font size for smaller screens */
-    letter-spacing: 4px; /* Adjust letter spacing for smaller screens */
+    font-size: 2.5em; 
+    letter-spacing: 4px; 
   }
 
   footer {
-    height: auto; /* Adjust height for smaller screens */
-    padding: 20px 0; /* Adjust padding for smaller screens */
+    height: auto; 
+    padding: 20px 0; 
   }
 
   footer .icons a {
-    font-size: 1.1em; /* Decrease font size for smaller screens */
+    font-size: 1.1em; 
   }
 
   footer .copyright {
-    font-size: 0.8em; /* Decrease font size for smaller screens */
+    font-size: 0.8em;
   }
 
   footer #elevator {
-    font-size: 0.7em; /* Decrease font size for smaller screens */
+    font-size: 0.7em; 
   }
 }
 
